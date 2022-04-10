@@ -1,0 +1,50 @@
+//- index.pug
+doctype html
+html
+  head
+  title Sk Dance academy
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+      ul
+        div#logo
+          img(src = "/static/img/logo.png")
+          | skd 
+        li #[a(href = "/") Home] 
+        li #[a(href = "/") About] 
+        li #[a(href = "/") Services] 
+        li #[a(href = "/") Class Info]
+        li #[a(href = "/") contact us]
+
+    section#intro 
+      div welcome to sk dance academy 
+      div.small Eat Sleep Dance Repeat
+       
+    section#mission 
+      h2 Our Mission
+      div.card 
+        h3 dance perfection
+        div.content
+          p perfection is the most important thing in dance
+      div.card 
+        h3 dance the way you like
+        div.content
+          p we can teach you any dance form you like, so you can indeed dance the way you like
+      div.card 
+        h3 teaching dance 
+        div.content
+          p we teach dance like no one else does, we are experienced in this field for 25 years
+        
+    section#sponsorsSection 
+      h2 Our sponsors
+      div#sponsors
+        img(src = "/static/img/apple.png" alt = "Sponsor imag", class = "spimg")
+        img(src = "/static/img/hp.png" alt = "Sponsor imag", class = "spimg")
+        img(src = "/static/img/microsoft.png" alt = "Sponsor imag", class = "spimg")
+
+
+    footer#footer
+      | copyight 2022 skdanceacademy.com | All rights reserved
+    script
+      include ../static/index.js
